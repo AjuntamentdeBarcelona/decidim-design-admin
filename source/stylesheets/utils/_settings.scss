@@ -61,7 +61,7 @@ $dark-gray: #2c2930;
 $black: #1a181d;
 $white: #fff;
 $light-gray-dark: darken($light-gray, 2.5) !default;
-$body-background: $light-gray;
+$body-background: $white;
 $body-font-color: #3D393C;
 $muted: lighten($body-font-color, 30) !default;
 $body-font-family: 'Source Sans Pro', Helvetica, Roboto, Arial, sans-serif;
@@ -117,20 +117,20 @@ $header-margin-bottom: 0.5rem;
 
 $header-styles: (
   'small': (
-    'h1': ('font-size': 40),
-    'h2': ('font-size': 32),
-    'h3': ('font-size': 28),
-    'h4': ('font-size': 24),
-    'h5': ('font-size': 20),
-    'h6': ('font-size': 16)
+    'h1': ('font-size': 26),
+    'h2': ('font-size': 22),
+    'h3': ('font-size': 20),
+    'h4': ('font-size': 18),
+    'h5': ('font-size': 16),
+    'h6': ('font-size': 14)
   ),
   'medium': (
-    'h1': ('font-size': 48),
-    'h2': ('font-size': 32),
-    'h3': ('font-size': 28),
-    'h4': ('font-size': 24),
-    'h5': ('font-size': 20),
-    'h6': ('font-size': 16)
+    'h1': ('font-size': 30),
+    'h2': ('font-size': 22),
+    'h3': ('font-size': 20),
+    'h4': ('font-size': 18),
+    'h5': ('font-size': 16),
+    'h6': ('font-size': 14)
   )
 );
 
@@ -545,7 +545,7 @@ $thumbnail-radius: $global-radius;
 
 $titlebar-background: $black;
 $titlebar-color: $white;
-$titlebar-padding: 1rem 0.5rem;
+$titlebar-padding: 0.5rem;
 $titlebar-text-font-weight: bold;
 $titlebar-icon-color: $white;
 $titlebar-icon-color-hover: $medium-gray;
@@ -568,7 +568,7 @@ $tooltip-radius: $global-radius;
 // -----------
 
 $topbar-padding: 0.5rem;
-$topbar-background: $black;
+$topbar-background: $medium-gray;
 $topbar-submenu-background: $topbar-background;
 $topbar-title-spacing: 1rem;
 $topbar-input-width: 200px;

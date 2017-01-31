@@ -1,0 +1,16 @@
+.top-bar{
+  overflow: auto;
+}
+
+.top-bar__menu > li:first-child > a {
+  padding-left: 0;
+}
+
+.top-bar__menu a{
+  text-transform: uppercase;
+  color: $body-font-color;
+  &:hover,
+  &:focus{
+    color: lighten($body-font-color, 20);
+  }
+}
