@@ -5,32 +5,24 @@ title: Decidim Admin
 <%= partial 'partials/template_top' %>
 
 <main class="main">
-  <div class="row">
+  <div class="row collapse">
     <div class="row column">
       <div class="container">
-        <h1>Procesos participativos</h1>
+        <h1>Páginas</h1>
         <table class="table-list">
           <thead>
             <tr>
-              <th class="table-list__actions">Destacado</th>
               <th>Título</th>
-              <th class="table-list__actions">Publicado</th>
               <th class="table-list__actions">Acciones</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td class="table-list__actions">
-                <a href="#">
-                  <%= icon "star" %>
-                </a>
-              </td>
               <td>
                 <a href="/process-info">
                   Proposa, prioritza i decideix sobre el pressupost del districte de l’Eixample
                 </a>
               </td>
-              <td class="table-list__actions"><input type="checkbox" /></td>
               <td class="table-list__actions">
                 <a href="#" class="action-icon"><%= icon "pencil" %></a>
                 <a href="#" class="action-icon"><%= icon "eye" %></a>

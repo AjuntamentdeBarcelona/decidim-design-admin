@@ -1,6 +1,6 @@
 .secondary-nav{
   background-color: $light-gray-dark;
-  min-height: 100%;
+  margin-top: 2rem;
   & > li > a{
     padding-left: 1.5rem;
   }
@@ -11,5 +11,8 @@
     &:focus{
       color: lighten($body-font-color, 20);
     }
+  }
+  li:last-child a{
+    border-bottom: 0;
   }
 }
