@@ -1,43 +1,27 @@
 ---
 title: Decidim Admin
-activesection: users
+activesection: settings
 ---
 
 <%= partial 'partials/template_top' %>
 <div class="columns medium-4 large-2">
-  <%= partial 'partials/users_nav' %>
+  <%= partial 'partials/settings_nav' %>
 </div>
 <div class="columns medium-8 large-10">
   <div class="row column">
     <div class="container">
-      <h1>Usuarios administradores <a href="#" class="button tiny button--title">Añadir</a></h1>
+      <h1>Scopes</h1>
       <table class="table-list">
         <thead>
           <tr>
-            <th>Nombre</th>
-            <th>DNI</th>
-            <th>Teléfono</th>
-            <th>Usuarios</th>
-            <th>Fecha</th>
+            <th>Name</th>
             <th class="table-list__actions">Acciones</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td>
-              <a href="#">Grupo 1</a>
-            </td>
-            <td>
-              12345678T
-            </td>
-            <td>
-              666 666 666
-            </td>
-            <td>
-              3
-            </td>
-            <td>
-              12/01/17
+              Grupo 1
             </td>
             <td class="table-list__actions">
               <a href="#" class="action-icon"><%= icon "check" %></a>

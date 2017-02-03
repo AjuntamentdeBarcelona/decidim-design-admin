@@ -1,36 +1,45 @@
 ---
 title: Decidim Admin
+activesection: pages
 ---
 
 <%= partial 'partials/template_top' %>
-
-<main class="main">
-  <div class="row collapse">
-    <div class="row column">
-      <div class="container">
-        <h1>Páginas</h1>
-        <table class="table-list">
-          <thead>
-            <tr>
-              <th>Título</th>
-              <th class="table-list__actions">Acciones</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>
-                <a href="/process-info">
-                  Proposa, prioritza i decideix sobre el pressupost del districte de l’Eixample
-                </a>
-              </td>
-              <td class="table-list__actions">
-                <a href="#" class="action-icon"><%= icon "pencil" %></a>
-                <a href="#" class="action-icon"><%= icon "eye" %></a>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+<div class="columns medium-4 large-2">
+  <%= partial 'partials/pages_nav' %>
+</div>
+<div class="columns medium-8 large-10">
+  <div class="row column">
+    <div class="container">
+      <div class="card">
+        <div class="card-divider">
+          <h2 class="card-title">Páginas</h2>
+        </div>
+        <div class="card-section">
+          <table class="table-list">
+            <thead>
+              <tr>
+                <th>Título</th>
+                <th class="table-list__actions">Acciones</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <a href="/process-info">
+                    Proposa, prioritza i decideix sobre el pressupost del districte de l’Eixample
+                  </a>
+                </td>
+                <td class="table-list__actions">
+                  <a href="#" class="action-icon"><%= icon "pencil" %></a>
+                  <a href="#" class="action-icon"><%= icon "eye" %></a>
+                  <a href="#" class="action-icon"><%= icon "circle-x" %></a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
   </div>
-</main>
+</div>
+<%= partial 'partials/template_bottom' %>

@@ -1,3 +1,41 @@
+
+.table-list{
+  border-collapse: collapse;
+  th{
+    text-transform: uppercase;
+  }
+
+  th,
+  td{
+    border-bottom: 1px solid rgba(black, .05);
+  }
+
+  th:first-child,
+  td:first-child{
+    padding-left: 0;
+  }
+
+  th:last-child,
+  td:last-child{
+    padding-right: 0;
+  }
+
+  a{
+    color: $body-font-color;
+    &:hover{
+      color: $primary-color;
+    }
+  }
+
+}
+
 .table-list__actions{
   text-align: center;
+  &:last-child{
+    text-align: right;
+  }
+  a,
+  .button{
+    color: $muted;
+  }
 }

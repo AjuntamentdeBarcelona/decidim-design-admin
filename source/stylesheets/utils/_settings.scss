@@ -39,6 +39,7 @@
 //  34. Title Bar
 //  35. Tooltip
 //  36. Top Bar
+//  37. Cards
 
 @import 'util/util';
 
@@ -49,21 +50,22 @@ $global-font-size: 100%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 $foundation-palette: (
-  primary: $primary,
-  secondary: $secondary,
-  success: $success,
-  warning: $warning,
-  alert: $alert,
+  primary: #039BE5,
+  secondary: $brand,
+  success: #5dc560,
+  warning: #ffb300,
+  alert: #e66a5d,
 );
-$light-gray: #fafafa;
-$medium-gray: #e8e8e8;
-$dark-gray: #2c2930;
+$lighter-gray: #f6f6f6;
+$light-gray: #eee;
+$medium-gray: #adadad;
+$dark-gray: #3b4557;
 $black: #1a181d;
 $white: #fff;
 $light-gray-dark: darken($light-gray, 2.5) !default;
-$body-background: $white;
-$body-font-color: #3D393C;
-$muted: lighten($body-font-color, 30) !default;
+$body-background: $lighter-gray;
+$body-font-color: #202734;
+$muted: #97a2b2 !default;
 $body-font-family: 'Source Sans Pro', Helvetica, Roboto, Arial, sans-serif;
 $body-antialiased: true;
 $global-margin: 1rem;
@@ -147,7 +149,7 @@ $code-font-weight: $global-weight-normal;
 $code-background: $light-gray;
 $code-border: 1px solid $medium-gray;
 $code-padding: rem-calc(2 5 1);
-$anchor-color: $secondary-color;
+$anchor-color: $primary-color;
 $anchor-color-hover: scale-color($anchor-color, $lightness: -14%);
 $anchor-text-decoration: none;
 $anchor-text-decoration-hover: none;
@@ -250,12 +252,13 @@ $button-background-hover: scale-color($button-background, $lightness: -15%);
 $button-color: $white;
 $button-color-alt: $black;
 $button-radius: $global-radius;
+*/
 $button-sizes: (
   tiny: 0.9rem,
   small: 0.9rem,
   default: 1rem,
   large: 1.25rem,
-);*/
+);
 $button-opacity-disabled: 0.25;
 
 // 12. Button Group
@@ -502,18 +505,18 @@ $switch-paddle-transition: all 0.25s ease-out;
 // 31. Table
 // ---------
 
-$table-background: $white;
+$table-background: transparent;
 $table-color-scale: 5%;
-$table-border: 1px solid smart-scale($table-background, $table-color-scale);
+$table-border: 0;
 $table-padding: rem-calc(8 10 10);
 $table-hover-scale: 2%;
-$table-row-hover: darken($table-background, $table-hover-scale);
-$table-row-stripe-hover: darken($table-background, $table-color-scale + $table-hover-scale);
-$table-striped-background: smart-scale($table-background, $table-color-scale);
-$table-stripe: even;
-$table-head-background: smart-scale($table-background, $table-color-scale / 2);
-$table-foot-background: smart-scale($table-background, $table-color-scale);
-$table-head-font-color: $body-font-color;
+//$table-row-hover: darken($table-background, $table-hover-scale);
+//$table-row-stripe-hover: darken($table-background, $table-color-scale + $table-hover-scale);
+//$table-striped-background: smart-scale($table-background, $table-color-scale);
+//$table-stripe: even;
+//$table-head-background: smart-scale($table-background, $table-color-scale / 2);
+//$table-foot-background: smart-scale($table-background, $table-color-scale);
+$table-head-font-color: $medium-gray;
 $show-header-for-stacked: false;
 
 // 32. Tabs
@@ -544,8 +547,8 @@ $thumbnail-radius: $global-radius;
 // 34. Title Bar
 // -------------
 
-$titlebar-background: $black;
-$titlebar-color: $white;
+$titlebar-background: $dark-gray;
+$titlebar-color: $body-font-color;
 $titlebar-padding: 0.5rem;
 $titlebar-text-font-weight: bold;
 $titlebar-icon-color: $white;
@@ -574,3 +577,15 @@ $topbar-submenu-background: $topbar-background;
 $topbar-title-spacing: 1rem;
 $topbar-input-width: 200px;
 $topbar-unstack-breakpoint: medium;
+
+// 37. Cards
+// ---------
+
+$card-background: $white;
+$card-font-color: $body-font-color;
+$card-divider-background: $light-gray;
+$card-border: 1px solid darken($light-gray, 5);
+$card-shadow: 0 1px 1px rgba(black, .1);
+$card-border-radius: $global-radius;
+$card-padding: $global-padding;
+$card-margin: $global-margin;

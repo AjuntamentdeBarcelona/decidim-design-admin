@@ -1,10 +1,17 @@
 .secondary-nav{
-  background-color: $light-gray-dark;
-  margin-top: 2rem;
-  & > li > a{
-    padding-left: 1.5rem;
+  width: calc(100% - 120px);
+  min-height: 100%;
+  float: left;
+  background-color: $white;
+  box-shadow: 3px 0 20px rgba(black, .05);
+
+  ul{
+    list-style: none;
+    margin-left: 0;
   }
-  a{
+  li > a{
+    display: block;
+    padding: .5rem 1rem;
     border-bottom: 1px solid rgba(black, .05);
     color: $body-font-color;
     &:hover,
@@ -12,7 +19,24 @@
       color: lighten($body-font-color, 20);
     }
   }
-  li:last-child a{
-    border-bottom: 0;
+  li:first-child > a{
+    border-top: 1px solid rgba(black, .05);
   }
+}
+
+.secondary-nav__title{
+  padding: 1rem 1rem;
+  text-transform: uppercase;
+  font-size: .8rem;
+  letter-spacing: .1em;
+  font-weight: bold;
+  white-space: nowrap;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.secondary-nav__actions{
+  padding: 1rem 1rem;
+  margin-top: 2rem;
 }

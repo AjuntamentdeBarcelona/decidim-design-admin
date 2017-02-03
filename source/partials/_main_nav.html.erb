@@ -1,21 +1,45 @@
-<div class="top-bar">
-  <div class="row column">
-    <ul class="menu top-bar__menu">
-      <li>
-        <a href="/home">Inicio</a>
-      </li>
-      <li>
-        <a href="/processes">Procesos</a>
-      </li>
-      <li>
-        <a href="/pages">Páginas</a>
-      </li>
-      <li>
-        <a href="/users">Usuarios</a>
-      </li>
-      <li>
-        <a href="/settings">Configuración</a>
-      </li>
-    </ul>
-</div>
+<div class="main-nav">
+  <ul>
+    <li <% if current_page.data.activesection == "home" %>
+     class="is-active"
+    <% end %> >
+      <a href="/home">
+        <%= icon "dashboard" %>
+        Inicio
+      </a>
+    </li>
+    <li <% if current_page.data.activesection == "processes" %>
+     class="is-active"
+    <% end %> >
+      <a href="/processes">
+        <%= icon "target" %>
+        Procesos
+      </a>
+    </li>
+    <li <% if current_page.data.activesection == "pages" %>
+     class="is-active"
+    <% end %> >
+      <a href="/pages">
+        <%= icon "book" %>
+        Páginas
+      </a>
+    </li>
+    <li
+    <% if current_page.data.activesection == "users" %>
+     class="is-active"
+    <% end %> >
+      <a href="/users">
+        <%= icon "person" %>
+        Usuarios
+      </a>
+    </li>
+    <li <% if current_page.data.activesection == "settings" %>
+     class="is-active"
+    <% end %> >
+      <a href="/settings">
+        <%= icon "wrench" %>
+        Configuración
+      </a>
+    </li>
+  </ul>
 </div>

@@ -1,0 +1,26 @@
+<%= partial 'partials/main_nav' %>
+<div class="secondary-nav">
+  <div class="secondary-nav__title" title="Proposa, prioritza i decideix sobre el pressupost del districte de l’Eixample">
+    Proposa, prioritza i decideix sobre el pressupost del districte de l’Eixample
+  </div>
+  <ul>
+    <li
+    <% if current_page.data.activesection == "process-info" %>
+     class="is-active"
+    <% end %> >
+      <a href="/process-info">Información</a>
+    </li>
+    <li>
+      <a href="/process-components">Componentes</a>
+    </li>
+    <li>
+      <a href="/process-categories">Categorías</a>
+    </li>
+    <li>
+      <a href="/process-docs">Documentos</a>
+    </li>
+    <li>
+      <a href="/process-admin">Administradores</a>
+    </li>
+  </ul>
+</div>
