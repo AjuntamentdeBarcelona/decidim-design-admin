@@ -34,13 +34,21 @@ body{
     position: absolute;
     top: 0;
     bottom: 0;
-    width: 340px;
-    //transform: translateX(-340px);
+    transform: translateX(-340px);
+    transition: transform .3s;
+  }
+  @include breakpoint(small down){
+    width: 100%;
+    transform: translateX(-100%);
+  }
+  &.is-nav-open{
+    transform: translateX(0);
   }
 }
 
 .layout-content{
   flex-grow: 1;
+  max-width: 100%;
 }
 
 

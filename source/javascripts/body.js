@@ -5,6 +5,8 @@
 
 //= require svg4everybody.min.js
 
+//= require toggle-nav.js
+
 $(document).foundation();
 
 $(function(){
