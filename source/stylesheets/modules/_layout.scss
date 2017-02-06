@@ -29,7 +29,7 @@ body{
 }
 
 .layout-nav{
-  flex-basis: 340px;
+  width: 340px;
   @include breakpoint(mediumlarge down){
     position: absolute;
     top: 0;
