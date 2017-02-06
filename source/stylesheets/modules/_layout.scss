@@ -21,6 +21,30 @@ body{
   }
 }
 
+.layout-wrapper{
+  display: flex;
+  flex-grow: 1;
+  @include clearfix;
+  position: relative;
+}
+
+.layout-nav{
+  flex-basis: 340px;
+  @include breakpoint(mediumlarge down){
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 340px;
+    //transform: translateX(-340px);
+  }
+}
+
+.layout-content{
+  flex-grow: 1;
+}
+
+
 .container{
   padding: 1.5rem 3rem;
+  max-width: 1200px;
 }

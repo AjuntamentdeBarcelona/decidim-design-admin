@@ -4,60 +4,58 @@ activesection: processes
 ---
 
 <%= partial 'partials/template_top' %>
-<div class="columns medium-4 large-2">
+<div class="layout-nav">
   <%= partial 'partials/process_nav' %>
 </div>
-<div class="columns medium-8 large-10">
-  <div class="row column">
-    <div class="container">
-      <h1>Procesos participativos</h1>
-      <table class="table-list">
-        <thead>
-          <tr>
-            <th class="table-list__actions">Destacado</th>
-            <th>Título</th>
-            <th class="table-list__actions">Publicado</th>
-            <th class="table-list__actions">Acciones</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="table-list__actions">
-              <a href="#">
-                <%= icon "star" %>
-              </a>
-            </td>
-            <td>
-              <a href="/process-info">
-                Proposa, prioritza i decideix sobre el pressupost del districte de l’Eixample
-              </a>
-            </td>
-            <td class="table-list__actions"><input type="checkbox" /></td>
-            <td class="table-list__actions">
-              <a href="#" class="action-icon"><%= icon "pencil" %></a>
-              <a href="#" class="action-icon"><%= icon "eye" %></a>
-            </td>
-          </tr>
-          <tr>
-            <td class="table-list__actions">
-              <a href="#">
-                <%= icon "star" %>
-              </a>
-            </td>
-            <td>
-              <a href="/process-info">
-                Proposa, prioritza i decideix sobre el pressupost del districte de l’Eixample
-              </a>
-            </td>
-            <td class="table-list__actions"><input type="checkbox" /></td>
-            <td class="table-list__actions">
-              <a href="#" class="action-icon"><%= icon "pencil" %></a>
-              <a href="#" class="action-icon"><%= icon "eye" %></a>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+<div class="layout-content">
+  <div class="container">
+    <h1>Procesos participativos</h1>
+    <table class="table-list">
+      <thead>
+        <tr>
+          <th class="table-list__actions">Destacado</th>
+          <th>Título</th>
+          <th class="table-list__actions">Publicado</th>
+          <th class="table-list__actions">Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="table-list__actions">
+            <a href="#">
+              <%= icon "star" %>
+            </a>
+          </td>
+          <td>
+            <a href="/process-info">
+              Proposa, prioritza i decideix sobre el pressupost del districte de l’Eixample
+            </a>
+          </td>
+          <td class="table-list__actions"><input type="checkbox" /></td>
+          <td class="table-list__actions">
+            <a href="#" class="action-icon"><%= icon "pencil" %></a>
+            <a href="#" class="action-icon"><%= icon "eye" %></a>
+          </td>
+        </tr>
+        <tr>
+          <td class="table-list__actions">
+            <a href="#">
+              <%= icon "star" %>
+            </a>
+          </td>
+          <td>
+            <a href="/process-info">
+              Proposa, prioritza i decideix sobre el pressupost del districte de l’Eixample
+            </a>
+          </td>
+          <td class="table-list__actions"><input type="checkbox" /></td>
+          <td class="table-list__actions">
+            <a href="#" class="action-icon"><%= icon "pencil" %></a>
+            <a href="#" class="action-icon"><%= icon "eye" %></a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </div>
 <%= partial 'partials/template_bottom' %>

@@ -1,51 +1,50 @@
 ---
 title: Decidim Admin
 activesection: users
+activepage: users-groups
 ---
 
 <%= partial 'partials/template_top' %>
-<div class="columns medium-4 large-2">
+<div class="layout-nav">
   <%= partial 'partials/users_nav' %>
 </div>
-<div class="columns medium-8 large-10">
-  <div class="row column">
-    <div class="container">
-      <h1>Grupos de usuarios</h1>
-      <table class="table-list">
-        <thead>
-          <tr>
-            <th>Nombre</th>
-            <th>DNI</th>
-            <th>Teléfono</th>
-            <th>Usuarios</th>
-            <th>Fecha</th>
-            <th class="table-list__actions">Acciones</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>
-              Grupo 1
-            </td>
-            <td>
-              12345678T
-            </td>
-            <td>
-              666 666 666
-            </td>
-            <td>
-              3
-            </td>
-            <td>
-              12/01/17
-            </td>
-            <td class="table-list__actions">
-              <a href="#" class="action-icon"><%= icon "check" %></a>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+<div class="row column">
+  <div class="container">
+    <h1>Grupos de usuarios</h1>
+    <table class="table-list">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>DNI</th>
+          <th>Teléfono</th>
+          <th>Usuarios</th>
+          <th>Fecha</th>
+          <th class="table-list__actions">Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            Grupo 1
+          </td>
+          <td>
+            12345678T
+          </td>
+          <td>
+            666 666 666
+          </td>
+          <td>
+            3
+          </td>
+          <td>
+            12/01/17
+          </td>
+          <td class="table-list__actions">
+            <a href="#" class="action-icon"><%= icon "check" %></a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </div>
 <%= partial 'partials/template_bottom' %>

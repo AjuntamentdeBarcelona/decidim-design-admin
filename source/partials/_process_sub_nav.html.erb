@@ -5,21 +5,29 @@
   </div>
   <ul>
     <li
-    <% if current_page.data.activesection == "process-info" %>
+    <% if current_page.data.activepage == "process-info" %>
      class="is-active"
     <% end %> >
       <a href="/process-info">Información</a>
     </li>
-    <li>
+    <li <% if current_page.data.activepage == "process-components" %>
+     class="is-active"
+    <% end %> >
       <a href="/process-components">Componentes</a>
     </li>
-    <li>
+    <li <% if current_page.data.activepage == "process-categories" %>
+     class="is-active"
+    <% end %> >
       <a href="/process-categories">Categorías</a>
     </li>
-    <li>
+    <li <% if current_page.data.activepage == "process-docs" %>
+     class="is-active"
+    <% end %> >
       <a href="/process-docs">Documentos</a>
     </li>
-    <li>
+    <li <% if current_page.data.activepage == "process-admin" %>
+     class="is-active"
+    <% end %> >
       <a href="/process-admin">Administradores</a>
     </li>
   </ul>

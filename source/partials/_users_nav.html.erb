@@ -4,10 +4,14 @@
     Usuarios
   </div>
   <ul>
-    <li>
+    <li <% if current_page.data.activepage == "users" %>
+     class="is-active"
+    <% end %> >
       <a href="/users">Administradores</a>
     </li>
-    <li>
+    <li <% if current_page.data.activepage == "users-groups" %>
+     class="is-active"
+    <% end %> >
       <a href="/users-groups">Grupos de usuarios</a>
     </li>
   </ul>

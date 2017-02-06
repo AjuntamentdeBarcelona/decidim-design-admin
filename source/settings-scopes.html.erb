@@ -1,35 +1,34 @@
 ---
 title: Decidim Admin
 activesection: settings
+activepage: settings-scopes
 ---
 
 <%= partial 'partials/template_top' %>
-<div class="columns medium-4 large-2">
+<div class="layout-nav">
   <%= partial 'partials/settings_nav' %>
 </div>
-<div class="columns medium-8 large-10">
-  <div class="row column">
-    <div class="container">
-      <h1>Scopes</h1>
-      <table class="table-list">
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th class="table-list__actions">Acciones</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>
-              Grupo 1
-            </td>
-            <td class="table-list__actions">
-              <a href="#" class="action-icon"><%= icon "check" %></a>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+<div class="layout-content">
+  <div class="container">
+    <h1>Scopes</h1>
+    <table class="table-list">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th class="table-list__actions">Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            Grupo 1
+          </td>
+          <td class="table-list__actions">
+            <a href="#" class="action-icon"><%= icon "check" %></a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </div>
 <%= partial 'partials/template_bottom' %>

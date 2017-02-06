@@ -4,10 +4,14 @@
     Configuración
   </div>
   <ul>
-    <li>
+    <li <% if current_page.data.activepage == "settings" %>
+     class="is-active"
+    <% end %> >
       <a href="/settings">Configuración</a>
     </li>
-    <li>
+    <li <% if current_page.data.activepage == "settings-scopes" %>
+     class="is-active"
+    <% end %> >
       <a href="/settings-scopes">Scopes</a>
     </li>
   </ul>
