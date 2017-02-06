@@ -36,3 +36,11 @@ a:hover .icon--action{
   width: 12px;
   height: 12px;
 }
+
+.icon-highlight{
+  color: $warning-color;
+}
+
+.icon-unpublished{
+  color: $alert-color;
+}

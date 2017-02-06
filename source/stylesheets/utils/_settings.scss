@@ -562,7 +562,7 @@ $has-tip-font-weight: $global-weight-bold;
 $has-tip-border-bottom: dotted 1px $dark-gray;
 $tooltip-background-color: $black;
 $tooltip-color: $white;
-$tooltip-padding: 0.75rem;
+$tooltip-padding: .3rem 1rem;
 $tooltip-font-size: $small-font-size;
 $tooltip-pip-width: 0.75rem;
 $tooltip-pip-height: $tooltip-pip-width * 0.866;

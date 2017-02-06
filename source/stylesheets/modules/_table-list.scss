@@ -1,4 +1,9 @@
+//Override Foundation defaults
+.table-scroll table{
+  width: 100%;
+}
 
+//Table list
 .table-list{
   border-collapse: collapse;
   th{
@@ -20,11 +25,14 @@
     padding-right: 0;
   }
 
-  a{
+  a:not(.button){
     color: $body-font-color;
     &:hover{
       color: $primary-color;
     }
+  }
+  td > .button{
+    margin-bottom: 0;
   }
 
 }
@@ -34,8 +42,19 @@
   &:last-child{
     text-align: right;
   }
-  a,
-  .button{
+  .action-icon,
+  a.action-icon{
     color: $muted;
   }
+  .action-icon--remove{
+    color: $alert-color;
+  }
+}
+
+.table-list__state{
+  text-align: center;
+}
+
+.icon-state.has-tip{
+  border-bottom: 0;
 }

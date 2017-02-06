@@ -1,3 +1,8 @@
 .action-icon:not(:last-child){
   margin-right: 1rem;
 }
+
+.action-icon.has-tip{
+  border-bottom: 0;
+  cursor: pointer;
+}
