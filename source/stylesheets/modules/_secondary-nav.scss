@@ -1,9 +1,9 @@
 .secondary-nav{
-  width: calc(100% - 120px);
+  width: 220px;
   min-height: 100%;
   float: left;
   background-color: $white;
-  box-shadow: 3px 0 20px rgba(black, .05);
+  box-shadow: 6px 0 10px rgba(black, .04);
 
   ul{
     list-style: none;
@@ -19,9 +19,21 @@
       color: lighten($body-font-color, 20);
     }
   }
-  li.is-active a{
+  li.is-active > a{
     background-color: $lighter-gray;
     border-radius: $global-radius;
+  }
+  li > ul{
+    margin-left: 1rem;
+    font-size: 90%;
+    a{
+      padding-top: .2rem;
+      padding-bottom: .2rem;
+    }
+    li.is-active a{
+      font-weight: 600;
+      background-color: transparent;
+    }
   }
 }
 

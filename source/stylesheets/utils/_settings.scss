@@ -93,7 +93,7 @@ $breakpoints: (
   xlarge: 1200px,
   xxlarge: 1440px,
 );
-$breakpoint-classes: (small smallmedium medium mediumlarge large);
+$breakpoint-classes: (small smallmedium medium mediumlarge large xlarge);
 
 // 3. The Grid
 // -----------
@@ -222,11 +222,11 @@ $accordionmenu-arrow-color: $primary-color;
 // 9. Badge
 // --------
 
-$badge-background: $primary-color;
-$badge-color: $white;
-$badge-padding: 0.3em;
-$badge-minwidth: 1.5em;
-$badge-font-size: 0.6rem;
+// $badge-background: $primary-color;
+// $badge-color: $white;
+// $badge-padding: 0.3em;
+// $badge-minwidth: 1.5em;
+// $badge-font-size: 0.6rem;
 
 // 10. Breadcrumbs
 // ---------------
@@ -243,16 +243,15 @@ $breadcrumbs-item-slash: true;
 // 11. Button
 // ----------
 
-/*
-$button-padding: 0.2em 1em;
-$button-margin: 0 0 $global-margin 0;
-$button-fill: solid;
-$button-background: $primary-color;
-$button-background-hover: scale-color($button-background, $lightness: -15%);
-$button-color: $white;
-$button-color-alt: $black;
-$button-radius: $global-radius;
-*/
+// $button-padding: 0.2em 1em;
+// $button-margin: 0 0 $global-margin 0;
+// $button-fill: solid;
+// $button-background: $primary-color;
+// $button-background-hover: scale-color($button-background, $lightness: -15%);
+// $button-color: $white;
+// $button-color-alt: $black;
+// $button-radius: $global-radius;
+
 $button-sizes: (
   tiny: 0.9rem,
   small: 0.9rem,
@@ -334,7 +333,7 @@ $flexvideo-ratio-widescreen: 16 by 9;
 // 19. Forms
 // ---------
 
-$fieldset-border: 1px solid $medium-gray;
+$fieldset-border: 1px solid $light-gray;
 $fieldset-padding: rem-calc(20);
 $fieldset-margin: rem-calc(18 0);
 $legend-padding: rem-calc(0 3);
@@ -344,7 +343,7 @@ $helptext-font-size: rem-calc(13);
 $helptext-font-style: italic;
 $input-prefix-color: $black;
 $input-prefix-background: $light-gray;
-$input-prefix-border: 1px solid $medium-gray;
+$input-prefix-border: 1px solid $light-gray;
 $input-prefix-padding: 1rem;
 $form-label-color: $body-font-color;
 $form-label-font-size: rem-calc(16);
@@ -360,7 +359,7 @@ $input-font-size: rem-calc(16);
 $input-background: $white;
 $input-background-focus: $white;
 $input-background-disabled: $light-gray;
-$input-border: 1px solid $medium-gray;
+$input-border: 1px solid $light-gray;
 $input-border-focus: 1px solid map-get($foundation-palette, primary);
 $input-shadow: inset 0 1px 2px rgba($black, 0.1);
 $input-shadow-focus: 0 0 5px $medium-gray;
@@ -443,10 +442,10 @@ $pagination-item-color: $body-font-color;
 $pagination-item-padding: rem-calc(3 10);
 $pagination-item-spacing: rem-calc(1);
 $pagination-radius: $global-radius;
-$pagination-item-background-hover: $medium-gray;
-$pagination-item-background-current: $secondary-color;
+$pagination-item-background-hover: $light-gray;
+$pagination-item-background-current: $medium-gray;
 $pagination-item-color-current: $white;
-$pagination-item-color-disabled: lighten($body-font-color, 30);
+$pagination-item-color-disabled: $muted;
 $pagination-ellipsis-color: $body-font-color;
 $pagination-mobile-items: false;
 $pagination-arrows: false;

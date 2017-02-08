@@ -1,0 +1,32 @@
+.tabs--lang{
+  background-color: transparent;
+  float: right;
+  li{
+    border-right: 1px solid $light-gray;
+  }
+  li:last-child{
+    border-right: 0;
+  }
+
+  a{
+    padding: 0 .5rem;
+    font-weight: normal;
+    color: $muted;
+    &:hover{
+      color: $anchor-color-hover;
+    }
+  }
+  .is-active a{
+    font-weight: 600;
+    color: $anchor-color;
+  }
+}
+
+.label--tabs{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  label{
+    display: inline-block;
+  }
+}

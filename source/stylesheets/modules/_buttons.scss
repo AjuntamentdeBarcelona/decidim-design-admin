@@ -11,9 +11,31 @@
   }
 }
 
+.button.muted{
+  background-color: $medium-gray;
+  &:hover{
+    background-color: darken($medium-gray, 10);
+  }
+}
+
 .button--title{
   margin-bottom: 0;
   @include breakpoint(mediumlarge){
     float: right;
+  }
+}
+
+
+.button--double{
+  margin-bottom: 1.5rem;
+  .button{
+    margin-right: 1rem;
+  }
+  @include breakpoint(mediumlarge){
+    display: flex;
+    align-items: center;
+    .button{
+      margin-bottom: 0;
+    }
   }
 }

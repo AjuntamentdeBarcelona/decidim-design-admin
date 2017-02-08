@@ -14,6 +14,45 @@
      class="is-active"
     <% end %> >
       <a href="/process-components">Componentes</a>
+      <% if current_page.data.activepage == "process-components" %>
+        <ul>
+          <li <% if current_page.data.activesubpage == "component-pages" %>
+           class="is-active"
+          <% end %> >
+            <a href="/component-pages">Páginas <span class="component-counter">2</span></a>
+          </li>
+          <li <% if current_page.data.activesubpage == "component-meetings" %>
+           class="is-active"
+          <% end %> >
+            <a href="/component-meetings">Encuentros <span class="component-counter">1</span></a>
+          </li>
+          <li <% if current_page.data.activesubpage == "component-proposals" %>
+           class="is-active"
+          <% end %> >
+            <a href="/component-proposals">Propuestas <span class="component-counter">1</span></a>
+          </li>
+          <li <% if current_page.data.activesubpage == "component-debates" %>
+           class="is-active"
+          <% end %> >
+            <a href="/component-debates">Debates <span class="component-counter component-counter--off">0</span></a>
+          </li>
+          <li <% if current_page.data.activesubpage == "component-results" %>
+           class="is-active"
+          <% end %> >
+            <a href="/component-results">Resultados <span class="component-counter component-counter--off">0</span></a>
+          </li>
+          <li <% if current_page.data.activesubpage == "component-budgets" %>
+           class="is-active"
+          <% end %> >
+            <a href="/component-budgets">Presupuestos <span class="component-counter component-counter--off">0</span></a>
+          </li>
+        </ul>
+      <% end %>
+    </li>
+    <li <% if current_page.data.activepage == "process-steps" %>
+     class="is-active"
+    <% end %> >
+      <a href="/process-steps">Pasos</a>
     </li>
     <li <% if current_page.data.activepage == "process-categories" %>
      class="is-active"

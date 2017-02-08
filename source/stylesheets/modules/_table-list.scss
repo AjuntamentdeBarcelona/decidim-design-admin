@@ -35,6 +35,11 @@
     margin-bottom: 0;
   }
 
+  .switch.tiny{
+    margin: 0 auto;
+    width: 48px;
+  }
+
 }
 
 .table-list__actions{
@@ -46,7 +51,7 @@
   a.action-icon{
     color: $muted;
   }
-  .action-icon--remove{
+  .action-icon.action-icon--remove{
     color: $alert-color;
   }
 }

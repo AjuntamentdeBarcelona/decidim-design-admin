@@ -1,11 +1,11 @@
 ---
 title: Decidim Admin
 activesection: processes
-activepage: process-categories
+activepage: process-components
+activesubpage: component-pages
 ---
 
 <%= partial 'partials/template_top' %>
-
 <div class="layout-nav">
   <%= partial 'partials/process_sub_nav' %>
 </div>
@@ -13,13 +13,14 @@ activepage: process-categories
   <div class="container">
     <div class="card">
       <div class="card-divider">
-        <h2 class="card-title">Categorías <a href="#" class="button tiny button--title">Añadir</a></h2>
+        <h2 class="card-title">Páginas <a href="#" class="button tiny button--title">Añadir</a></h2>
       </div>
       <div class="card-section">
         <div class="table-scroll">
           <table class="table-list">
             <thead>
               <tr>
+                <th width="80">Publicado</th>
                 <th>Título</th>
                 <th></th>
               </tr>
@@ -27,19 +28,37 @@ activepage: process-categories
             <tbody>
               <tr>
                 <td>
-                  Categoría 1
+                  <div class="switch tiny" aria-label="Publicado">
+                      <label>
+                        <input class="switch-input" type="checkbox" checked>
+                        <span class="switch-paddle"></span>
+                      </label>
+                    </div>
+                </td>
+                <td>
+                  Página de info
                 </td>
                 <td class="table-list__actions">
                   <a href="#"  data-tooltip aria-haspopup="true"  data-disable-hover="false" title="Editar" class="action-icon"><%= icon "pencil" %></a>
+                  <a href="#"  data-tooltip aria-haspopup="true"  data-disable-hover="false" title="Ver" class="action-icon"><%= icon "eye" %></a>
                   <a href="#" data-tooltip aria-haspopup="true"  data-disable-hover="false" title="Eliminar" class="action-icon action-icon--remove"><%= icon "circle-x" %></a>
                 </td>
               </tr>
               <tr>
                 <td>
-                  Categoría 2
+                  <div class="switch tiny switch-with-label" aria-label="Publicado">
+                      <label>
+                        <input class="switch-input" type="checkbox">
+                        <span class="switch-paddle"></span>
+                      </label>
+                    </div>
+                </td>
+                <td>
+                  El proceso en Gràcia
                 </td>
                 <td class="table-list__actions">
                   <a href="#"  data-tooltip aria-haspopup="true"  data-disable-hover="false" title="Editar" class="action-icon"><%= icon "pencil" %></a>
+                  <a href="#"  data-tooltip aria-haspopup="true"  data-disable-hover="false" title="Ver" class="action-icon"><%= icon "eye" %></a>
                   <a href="#" data-tooltip aria-haspopup="true"  data-disable-hover="false" title="Eliminar" class="action-icon action-icon--remove"><%= icon "circle-x" %></a>
                 </td>
               </tr>
