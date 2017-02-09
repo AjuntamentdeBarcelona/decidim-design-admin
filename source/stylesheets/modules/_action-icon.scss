@@ -2,7 +2,12 @@
   margin-right: 1rem;
 }
 
-.action-icon.has-tip{
+.action-icon.has-tip,
+.simple-has-tip.has-tip{
   border-bottom: 0;
   cursor: pointer;
+}
+
+.action-icon.action-icon--remove{
+  color: $alert-color;
 }

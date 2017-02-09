@@ -44,6 +44,7 @@
 
 .table-list__actions{
   text-align: center;
+  white-space: nowrap;
   &:last-child{
     text-align: right;
   }

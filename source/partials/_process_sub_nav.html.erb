@@ -10,17 +10,17 @@
     <% end %> >
       <a href="/process-info">Información</a>
     </li>
+    <li <% if current_page.data.activepage == "process-steps" %>
+     class="is-active"
+    <% end %> >
+      <a href="/process-steps">Fases</a>
+    </li>
     <li <% if current_page.data.activepage == "process-components" %>
      class="is-active"
     <% end %> >
       <a href="/process-components">Componentes</a>
       <% if current_page.data.activepage == "process-components" %>
         <ul>
-          <li <% if current_page.data.activesubpage == "component-pages" %>
-           class="is-active"
-          <% end %> >
-            <a href="/component-pages">Páginas <span class="component-counter">2</span></a>
-          </li>
           <li <% if current_page.data.activesubpage == "component-meetings" %>
            class="is-active"
           <% end %> >
@@ -49,10 +49,10 @@
         </ul>
       <% end %>
     </li>
-    <li <% if current_page.data.activepage == "process-steps" %>
+    <li <% if current_page.data.activepage == "process-pages" %>
      class="is-active"
     <% end %> >
-      <a href="/process-steps">Pasos</a>
+      <a href="/process-pages">Páginas</a>
     </li>
     <li <% if current_page.data.activepage == "process-categories" %>
      class="is-active"

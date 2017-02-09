@@ -9,3 +9,12 @@
 @function shade($color, $percentage) {
   @return mix(black, $color, $percentage);
 }
+
+
+//Small caps
+@mixin smallcaps{
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: .1em;
+  font-size: .9em;
+}

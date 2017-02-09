@@ -1,5 +1,6 @@
 .component-counter{
-  background-color: $primary-color;
+  background-color: $medium-gray;
+  color: $white;
   padding: .1em .5em;
   min-width: 2em;
   text-align: center;
@@ -8,7 +9,6 @@
   font-size: .7rem;
   float: right;
   margin-top: .4em;
-  color: $white;
 }
 
 .component-counter--off{

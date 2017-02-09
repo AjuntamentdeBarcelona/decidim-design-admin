@@ -27,8 +27,7 @@
 
 
 .button--double{
-  margin-bottom: 1.5rem;
-  .button{
+  .button:not(:last-child){
     margin-right: 1rem;
   }
   @include breakpoint(mediumlarge){
@@ -38,4 +37,8 @@
       margin-bottom: 0;
     }
   }
+}
+
+.button--simple{
+  margin-bottom: 0;
 }

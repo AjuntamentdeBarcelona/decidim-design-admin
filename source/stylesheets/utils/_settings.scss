@@ -51,7 +51,7 @@ $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 $foundation-palette: (
   primary: #039BE5,
-  secondary: $brand,
+  secondary: #eee,
   success: #5dc560,
   warning: #ffb300,
   alert: #e66a5d,
@@ -273,7 +273,7 @@ $buttongroup-expand-max: 6;
 
 $callout-background: $white;
 $callout-background-fade: 90%;
-$callout-border: 0;
+$callout-border: 1px solid rgba(black, .2);
 $callout-margin: 0 0 1rem 0;
 $callout-padding: 1rem;
 $callout-font-color: $body-font-color;
@@ -587,4 +587,4 @@ $card-border: 1px solid darken($light-gray, 5);
 $card-shadow: 0 1px 1px rgba(black, .1);
 $card-border-radius: $global-radius;
 $card-padding: $global-padding;
-$card-margin: $global-margin;
+$card-margin: $global-margin * 3;
