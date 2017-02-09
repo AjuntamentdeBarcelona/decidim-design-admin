@@ -1,9 +1,13 @@
+//Vars
+$process-title-height: 3rem;
+
+//Styles
 .secondary-nav{
   width: 220px;
   min-height: 100%;
   float: left;
   background-color: $white;
-  box-shadow: 6px 0 10px rgba(black, .04);
+  box-shadow: 6px 6px 10px rgba(black, .04);
 
   ul{
     list-style: none;
@@ -37,8 +41,17 @@
   }
 }
 
+.secondary-nav--subnav{
+  padding-top: 2rem;
+
+  @include breakpoint(mediumlarge){
+    min-height: calc(100% - #{$process-title-height});
+    margin-top: $process-title-height;
+  }
+}
+
 .secondary-nav__title,
-.process-title{
+.process-title-content{
   margin-bottom: 1.5rem;
   text-transform: uppercase;
   font-size: .8rem;
@@ -58,4 +71,25 @@
 .secondary-nav__actions{
   padding: 1rem 1rem;
   margin-top: 2rem;
+}
+
+
+.process-title{
+  @include breakpoint(mediumlarge){
+    margin-bottom: $process-title-height;
+  }
+}
+
+.process-title-content{
+  @include breakpoint(mediumlarge){
+    position: absolute;
+    left: 120px;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    background-color: $white;
+    padding: 1rem 1.5rem;
+    height: $process-title-height;
+    box-shadow: 0 6px 10px rgba(black, .04);
+  }
 }
