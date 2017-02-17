@@ -16,3 +16,4 @@
 // = require foundation-sites/dist/js/plugins/foundation.util.touch.js
 // = require foundation-sites/dist/js/plugins/foundation.util.triggers.js
 // = require foundation-sites/dist/js/plugins/foundation.tooltip.js
+// = require foundation-sites/dist/js/plugins/foundation.abide.js
