@@ -44,7 +44,7 @@ $process-title-height: 3rem;
 .secondary-nav--subnav{
   padding-top: 2rem;
 
-  @include breakpoint(mediumlarge){
+  @include breakpoint(large){
     min-height: calc(100% - #{$process-title-height});
     margin-top: $process-title-height;
   }
@@ -75,13 +75,13 @@ $process-title-height: 3rem;
 
 
 .process-title{
-  @include breakpoint(mediumlarge){
+  @include breakpoint(large){
     margin-bottom: $process-title-height;
   }
 }
 
 .process-title-content{
-  @include breakpoint(mediumlarge){
+  @include breakpoint(large){
     position: absolute;
     left: 120px;
     right: 0;
