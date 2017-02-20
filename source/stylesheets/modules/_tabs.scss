@@ -20,6 +20,9 @@
     font-weight: 600;
     color: $anchor-color;
   }
+  a.is-tab-error{
+    color: $alert-color;
+  }
 }
 
 .label--tabs{
@@ -29,4 +32,18 @@
   label{
     display: inline-block;
   }
+}
+
+.tab-custom-error-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tab-custom-error{
+  @extend .form-error;
+  margin-right: .3rem;
+}
+
+.is-tab-custom-error-visible{
+  display: block;
 }
