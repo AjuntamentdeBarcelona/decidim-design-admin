@@ -5,4 +5,6 @@
 @import "foundation";
 @include foundation-everything();
 
+@import "plugins/foundation-datepicker";
+
 @import "modules/modules";
