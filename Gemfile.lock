@@ -1,5 +1,5 @@
 GIT
-  remote: git://github.com/marsbased/middleman-email.git
+  remote: https://github.com/marsbased/middleman-email
   revision: 32cc41f23376eb0fe876cdd747a9efe534604543
   specs:
     middleman-email (0.0.1)

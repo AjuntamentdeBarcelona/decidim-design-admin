@@ -6,7 +6,7 @@ gem 'middleman-livereload', '~> 3.1.0'
 gem 'font-awesome-sass', '~> 4.3.0', require: false
 
 gem 'middleman-autoprefixer'
-gem 'middleman-email', github: 'marsbased/middleman-email'
+gem 'middleman-email', git: 'https://github.com/marsbased/middleman-email'
 
 gem "scss_lint", require: false
 
