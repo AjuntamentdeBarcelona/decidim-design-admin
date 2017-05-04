@@ -61,6 +61,11 @@
     <% end %> >
       <a href="/process-docs">Documentos</a>
     </li>
+    <li <% if current_page.data.activepage == "process-moderations" %>
+     class="is-active"
+    <% end %> >
+      <a href="/process-moderations">Denuncias</a>
+    </li>
     <li <% if current_page.data.activepage == "process-admin" %>
      class="is-active"
     <% end %> >
