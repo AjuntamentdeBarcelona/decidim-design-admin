@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
-gem "middleman", "~>3.4.0"
-gem 'middleman-livereload', '~> 3.1.0'
+gem "middleman", "~> 3.4"
+gem 'middleman-livereload', '~> 3.4'
 
 gem 'middleman-autoprefixer'
 gem 'middleman-email', git: 'https://github.com/marsbased/middleman-email'

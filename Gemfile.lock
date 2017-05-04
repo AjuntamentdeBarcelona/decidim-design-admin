@@ -50,7 +50,7 @@ GEM
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
     erubis (2.7.0)
-    eventmachine (1.2.0.1)
+    eventmachine (1.2.3)
     execjs (2.7.0)
     ffi (1.9.14)
     foreman (0.82.0)
@@ -100,11 +100,10 @@ GEM
       middleman-core (>= 3.2)
       net-sftp
       ptools
-    middleman-livereload (3.1.1)
-      em-websocket (>= 0.2.0)
-      middleman-core (>= 3.0.2)
-      multi_json (~> 1.0)
-      rack-livereload
+    middleman-livereload (3.4.6)
+      em-websocket (~> 0.5.1)
+      middleman-core (>= 3.3)
+      rack-livereload (~> 0.3.15)
     middleman-sprockets (3.4.2)
       middleman-core (>= 3.3)
       sprockets (~> 2.12.1)
@@ -173,11 +172,11 @@ PLATFORMS
 
 DEPENDENCIES
   foreman
-  middleman (~> 3.4.0)
+  middleman (~> 3.4)
   middleman-autoprefixer
   middleman-deploy (~> 1.0)
   middleman-email!
-  middleman-livereload (~> 3.1.0)
+  middleman-livereload (~> 3.4)
   scss_lint
 
 BUNDLED WITH
