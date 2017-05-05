@@ -1,5 +1,5 @@
 GIT
-  remote: git://github.com/marsbased/middleman-email.git
+  remote: https://github.com/marsbased/middleman-email
   revision: 32cc41f23376eb0fe876cdd747a9efe534604543
   specs:
     middleman-email (0.0.1)
@@ -10,7 +10,6 @@ GIT
 
 GEM
   remote: https://rubygems.org/
-  remote: https://rails-assets.org/
   specs:
     activesupport (4.2.7)
       i18n (~> 0.7)
@@ -50,11 +49,9 @@ GEM
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
     erubis (2.7.0)
-    eventmachine (1.2.0.1)
+    eventmachine (1.2.3)
     execjs (2.7.0)
     ffi (1.9.14)
-    font-awesome-sass (4.3.2.1)
-      sass (~> 3.2)
     foreman (0.82.0)
       thor (~> 0.19.1)
     haml (4.0.7)
@@ -65,7 +62,7 @@ GEM
     htmlentities (4.3.4)
     http_parser.rb (0.6.0)
     i18n (0.7.0)
-    json (1.8.3)
+    json (1.8.6)
     kramdown (1.11.1)
     listen (3.0.8)
       rb-fsevent (~> 0.9, >= 0.9.4)
@@ -102,11 +99,10 @@ GEM
       middleman-core (>= 3.2)
       net-sftp
       ptools
-    middleman-livereload (3.1.1)
-      em-websocket (>= 0.2.0)
-      middleman-core (>= 3.0.2)
-      multi_json (~> 1.0)
-      rack-livereload
+    middleman-livereload (3.4.6)
+      em-websocket (~> 0.5.1)
+      middleman-core (>= 3.3)
+      rack-livereload (~> 0.3.15)
     middleman-sprockets (3.4.2)
       middleman-core (>= 3.3)
       sprockets (~> 2.12.1)
@@ -174,14 +170,13 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  font-awesome-sass (~> 4.3.0)
   foreman
-  middleman (~> 3.4.0)
+  middleman (~> 3.4)
   middleman-autoprefixer
   middleman-deploy (~> 1.0)
   middleman-email!
-  middleman-livereload (~> 3.1.0)
+  middleman-livereload (~> 3.4)
   scss_lint
 
 BUNDLED WITH
-   1.13.6
+   1.14.6
