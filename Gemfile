@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 gem "middleman", "~> 3.4"
 gem 'middleman-livereload', '~> 3.4'
 
-gem 'middleman-autoprefixer'
+gem 'middleman-autoprefixer', "~> 2.8"
 
 gem "scss_lint", require: false
 
