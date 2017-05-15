@@ -9,7 +9,7 @@
 /public
 
 # Ignore the bower directory
-/source/bower_components
+/bower_components
 
 # Ignore cache
 /.sass-cache
