@@ -1,3 +1,5 @@
+require_relative 'math'
+
 # Change Compass configuration
 compass_config do |config|
   config.add_import_path "bower_components/foundation-sites/scss/"
