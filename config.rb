@@ -21,6 +21,8 @@ configure :build do
   set :environment, 'production'
 end
 
+activate :sprockets
+
 after_configuration do
   @bower_config = JSON.parse(IO.read("#{root}/.bowerrc"))
   sprockets.append_path File.join root, @bower_config["directory"]
