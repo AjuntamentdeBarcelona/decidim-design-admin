@@ -19,8 +19,6 @@ set :images_dir, 'images'
 set :fonts_dir, 'fonts'
 set :build_dir, 'public'
 
-activate :autoprefixer
-
 configure :development do
   set :environment, 'development'
 end
