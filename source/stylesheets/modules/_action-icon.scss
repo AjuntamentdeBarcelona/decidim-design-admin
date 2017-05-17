@@ -1,3 +1,5 @@
+@import "vendor/mathsass/math";
+
 $action-icon-height: 24px;
 $action-icon-width: $icon-size;
 
@@ -29,6 +31,6 @@ $action-icon-width: $icon-size;
     left: 50%;
     position: absolute;
     top: 0;
-    transform: rotate(#{atan2($action-icon-width, $action-icon-height)}deg);
+    transform: rotate(rad-to-deg(atan2($action-icon-width, $action-icon-height)));
   }
 }
